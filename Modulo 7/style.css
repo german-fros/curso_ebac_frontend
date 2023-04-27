@@ -39,10 +39,8 @@ input {
 }
 
 button {
+    margin-top: 10px;
     font-size: 1.1em;
-    position: relative;
-    display: block;
-    left: 56%;
     padding: 5px;
     background-color: rgb(96, 153, 96);
     color: white;

@@ -1,14 +1,16 @@
 const natxt = document.getElementById('natxt')
 const nbtxt = document.getElementById('nbtxt')
 const form = document.getElementById('form')
+const ok = document.getElementById('ok')
+const erro = document.getElementById('erro')
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
 
     if (nbtxt.value <= natxt.value) {
-        const erro = document.getElementById('erro')
         const msgErro = document.createElement('p')
         
+        ok.innerHTML = ''
         erro.innerHTML = ''
 
         msgErro.innerHTML = 'Valor inválido! <strong>Número B</strong> tem que ser <strong>maior</strong> que o <strong>Número A</strong>'
@@ -17,7 +19,6 @@ form.addEventListener('submit', function(e){
         nbtxt.style.borderColor = 'red'
         nbtxt.style.outlineColor = 'red'
     } else {
-        const ok = document.getElementById('ok')
         const msgOk = document.createElement('p')
 
         ok.innerHTML = ''
@@ -30,5 +31,9 @@ form.addEventListener('submit', function(e){
         erro.style.display = 'none'
         nbtxt.style.borderColor = ''
         nbtxt.style.outlineColor = ''
+
+        natxt.value = ''
+        natxt.focus()
+        nbtxt.value = ''
     }
 })
