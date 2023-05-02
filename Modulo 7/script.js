@@ -1,13 +1,15 @@
-const natxt = document.getElementById('natxt')
-const nbtxt = document.getElementById('nbtxt')
-const form = document.getElementById('form')
-const ok = document.getElementById('ok')
-const erro = document.getElementById('erro')
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
-
-    if (nbtxt.value <= natxt.value) {
+    
+    const natxt = document.getElementById('natxt')
+    const nbtxt = document.getElementById('nbtxt')
+    const nro_a = Number(natxt.value)
+    const nro_b = Number(nbtxt.value)
+    const ok = document.getElementById('ok')
+    const erro = document.getElementById('erro')
+    
+    if (nro_b <= nro_a) {
         const msgErro = document.createElement('p')
         
         ok.innerHTML = ''
@@ -23,7 +25,7 @@ form.addEventListener('submit', function(e){
 
         ok.innerHTML = ''
 
-        msgOk.innerHTML = 'Perfeito! <strong>Número B</strong> é <strong>maior</strong> que <strong>Número A</strong>'
+        msgOk.innerHTML = `Perfeito! <strong>${nro_b}</strong> é <strong>maior</strong> que <strong>${nro_a}!</strong>`
         ok.appendChild(msgOk)
 
         ok.classList.add('ok')
