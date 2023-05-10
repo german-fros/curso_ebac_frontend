@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modulo 10</title>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+    <div class="container">
+        <form action="">
+
+            <label for="nome" class="label">Nome completo:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="cpf" class="label">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+
+            <label for="email" class="label">E-mail:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="telefone" class="label">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" minlength="15">
+
+            <label for="cep" class="label">CEP:</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="endereço" class="label">Endereço:</label>
+            <input type="text" name="endereço" id="endereço">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
