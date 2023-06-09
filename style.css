@@ -8,6 +8,22 @@ header h1 {
     color: white;
 }
 
+.carousel {
+    margin-bottom: 32px;
+}
+
+.carousel img {
+    max-width: 780px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.514);
+}
 .card {
     margin-bottom: 32px;
 }
